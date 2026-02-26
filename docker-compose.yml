@@ -17,8 +17,8 @@ services:
     image: mysql:8.0
     container_name: usuarios_mysql
     environment:
-      MYSQL_ROOT_PASSWORD: 
-      MYSQL_DATABASE: PIRESTHUGO
+      MYSQL_ALLOW_EMPTY_PASSWORD: yes
+      MYSQL_DATABASE: APIRESTHUGO
     ports:
       - "3306:3306"
     volumes:
