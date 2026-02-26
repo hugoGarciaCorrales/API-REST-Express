@@ -11,8 +11,6 @@ services:
       - DB_USER=root
       - DB_PASSWORD=
       - DB_NAME=usuariosdb
-    volumes:
-      - .:/app
     restart: always
 
   mysql:
