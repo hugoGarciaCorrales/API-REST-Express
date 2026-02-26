@@ -10,7 +10,7 @@ services:
       - DB_HOST=mysql
       - DB_USER=root
       - DB_PASSWORD=
-      - DB_NAME=usuariosdb
+      - DB_NAME=apiresthugo
     restart: always
 
   mysql:
