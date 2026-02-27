@@ -12,6 +12,8 @@ La propia instalación ya crea la BD con la tabla y datos de prueba
 $ git pull https://github.com/hugoGarciaCorrales/API-REST-Express.git
 ```
 
+En caso de necesitarlo modificar el archivo ``.env`` para configurar el servidor
+
 ## **Ejecución**
 
 ```

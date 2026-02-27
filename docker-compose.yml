@@ -3,14 +3,14 @@ services:
     build: .
     container_name: usuarios_api
     ports:
-      - "8080:8080"
+      - "${PORT}:${PORT}"
     depends_on:
       - mysql
     environment:
       - DB_HOST=mysql
-      - DB_USER=root
-      - DB_PASSWORD=
-      - DB_NAME=apiresthugo
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
     restart: always
 
   mysql:
@@ -18,7 +18,7 @@ services:
     container_name: usuarios_mysql
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: yes
-      MYSQL_DATABASE: APIRESTHUGO
+      MYSQL_DATABASE: ${DB_NAME}
     ports:
       - "3306:3306"
     volumes:
